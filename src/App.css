@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.app {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* SEARCH */
+.search {
+    margin: 30px 0; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.search h1 {
+    color: blue;
+    cursor: pointer;
+}
+
+.search form {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+  
+.search form input {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+  
+.btn {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: blue;
+    color: yellow;
+}
+
+.btn:hover {
+    background-color: rgb(7, 7, 66);
+}
+
+/* FAVORITE */
+.favorite {
+    background-color: aquamarine;
+    padding: 15px;
+    border-radius: 16px;
+}
+  
+.favorite-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+  
+.favorite-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+  
+.favorite-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+  
+.favorite-item button {
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: blue;
+    color: yellow;
+}
+
+.favorite-item button:hover {
+    background-color: rgb(7, 7, 66);
+}
+
+/* MEAL */
+.meal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.meal-item{
+    border: 1px solid gray;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.meal-item-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.meal-item-footer button {
+    border: none;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.meal-item-footer button:hover {
+    color: yellow;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .modal-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    width: 800px;
+    height: 80vh;
+    background-color: white;
+    border: 1px solid gray;
+    overflow: scroll;
+    color: blue;
+  }
+  
+  .modal-item img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .modal-item button {
+    width: 100px;
+    padding: 10px 20px;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 16px;
+    color: blue;
+  }
+
+  .modal-item button:hover {
+    background-color: orange;
+  }
+  
